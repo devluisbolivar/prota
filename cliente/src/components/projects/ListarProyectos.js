@@ -10,7 +10,8 @@ const ListarProyectos = () => {
     obtenerProyectos();
   }, []);
 
-  if (proyectos.length === 0) return null;
+  if (proyectos.length === 0)
+    return <p>No hay proyectos, puedes crear uno! </p>;
 
   return (
     <ul className="listado-proyectos">
