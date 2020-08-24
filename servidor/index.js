@@ -7,6 +7,8 @@ conectarDB();
 
 const PORT = process.env.port || 4000;
 
+app.use("/api/usuarios", require("./routes/usuarios"));
+
 app.listen(PORT, () => {
   console.log(`El servidor está funcionando desde el puerto ${PORT}`);
 });
